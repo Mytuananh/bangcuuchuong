@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let multi;
+    let i =1
+    let j =2
+    let e = i*j
+    multi = "<table border='1' width='1000' cellspacing='2' cellpadding='0'>"
+    while (i <= 9) {
+        multi = multi + "<tr>"
+        while (j <= 9) {
+            e =i*j
+            multi = multi + "<td>" + j + "*" + i +  " = " + e  + "</td>"
+            j++
+        }
+       multi = multi + "</tr>"
+        j = 2
+        i++
+    }
+    multi = multi +"</table>"
+    document.write(multi)
+</script>
+</body>
+</html>
